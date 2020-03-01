@@ -14,7 +14,7 @@
   <meta name="description" content="一个博客">
   <meta name="author" content="penghui zhang">
   <meta name="keywords" content="blog">
-  <title>归档 ~ breezepond</title>
+  <title>breezepond</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -35,7 +35,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -95,7 +95,7 @@
 </nav>
 
     <div class="view intro-2" id="background"
-         style="background: url('/img/default.png')no-repeat center center;
+         style="background: url('img/default.png')no-repeat center center;
            background-size: cover;
            background-attachment: fixed;">
       <div class="full-bg-img">
@@ -105,6 +105,41 @@
               
             </span>
 
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期一, 三月 2日 2020, 12:27 凌晨
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    496 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
             
           </div>
 
@@ -116,35 +151,65 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 3 篇文章</p>
-  <hr>
-  
-    
       
-      <p class="h5">2019</p>
-    
-    <a href="/2019/11/21/关于在Android Studio XML设计界面代码报错解决方案/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title"></span>
-      <span style="float: right;">11-21</span>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p>这是我决定开始用开发日志来记录自己遇到的开发问题以后的第一篇开发日志，在这之前我甚至没有习惯会去维护自己瞎做的一个github blog。<br>既然就只有右键-git bash here</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
 
-              </div>
-            </div>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这么简单，不妨就写一下。<br>今天仍然在摸索动作设计的路上，负责人现在还没法见面，所以动作只能靠自己半桶水<del>都没有</del>的理解力来进行常识性的还原。<br>为了摸清自己手机的尿性，我从csdn下载了一个传感器调动的源代码，并使用as进行打包用于在自己手机上运行，代码的可读性不错，界面相当简洁，只有手机自带传感器的数值，而新app的功能就是把这些冷冰冰的数值转变成一个模拟动作。<br><img src="en-resource://database/416:0" srcset="undefined" alt="881976637d496976f994d4587d9dc9df.jpeg"></p>
+<p>  如果有什么额外的字，那就是我自己摸索尝试打出来的。</p>
+<p>  ###<br>  曲肘</p>
+<p>  ###<br>  在此我直接监听方向传感器的Y轴数值，如果能在大臂夹紧的情况下，可以做到接近+85的数值，监听范围在这个数值附近，即可判断为动作正确，反之则错误。当然，这是要APP对康复患者进行引导，做出一个理想动作，手机才能通过数值来了解动作的实行情况。</p>
+<p>  ###<br>  手腕</p>
+<p>  ###<br>  这个也比较简单，跟曲肘异曲同工，监测方向传感器在X轴方向的变化即可，不过要求初始动作与结束动作差值大于90小于180<del>如果你是神之长子大于180也可以</del>。 </p>
+<hr>
+<p>  今天就先写这些，目前来看这个app的开发还是可行的，难度就在于我对于AS和java的了解了。XML也是个让人头疼的东西，希望我能在正式返校之前，做出一个看得过去的DEMO。</p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -219,6 +284,11 @@
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
@@ -259,7 +329,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
