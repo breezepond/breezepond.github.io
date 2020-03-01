@@ -35,7 +35,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -95,7 +95,7 @@
 </nav>
 
     <div class="view intro-2" id="background"
-         style="background: url('/img/mainpage.png')no-repeat center center;
+         style="background: url('img/default.png')no-repeat center center;
            background-size: cover;
            background-attachment: fixed;">
       <div class="full-bg-img">
@@ -106,12 +106,43 @@
             </span>
 
             
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期日, 三月 1日 2020, 11:36 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    188 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="fas fa-angle-down scroll-down-arrow"></i>
-            </div>
           
         </div>
       </div>
@@ -120,79 +151,53 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p>首先，先吐槽一下自己一个假期以来的摸鱼表现，做C语言天梯赛的时候觉得自己像头猪，做Android的时候觉得自己像猪头，做数据结构的题目的时候觉得老师真的是天使，这么菜的学生都能勉强给一个及格。<br>垃圾实名忏悔。<br>总之，接下来的文本内容会以C语言天梯赛习题，Android Studio开发问题为主，数据结构啥的。。开学再说吧，说不定还会丢几份开发日志上来给自己康康。<br>目标，成为<del>神奇宝贝大师</del>不成为被二线医院院长老伯伯嫌弃的有用的<del>电脑修理工</del>程序员。<br>冲冲冲！</p>
 
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/03/01/开学前的话/">
-        <p class="h4 index-header"></p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">首先，先吐槽一下自己一个假期以来的摸鱼表现，做C语言天梯赛的时候觉得自己像头猪，做Android的时候觉得自己像猪头，做数据结构的题目的时候觉得老师真的是天使，这么菜的学生都能勉强给一个及格。垃圾实名忏悔。总之，接下来的文本内容会以C语言天梯赛习题，Android Studio开发问题为主，数据结构啥的。。开学再说吧，说不定还会丢几份开发日志上来给自己康康。目标，成为神奇宝贝大师不成为被二线医院院长老伯伯嫌弃的有用的电脑修理工程序员。冲冲冲！
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-01&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/11/21/关于在Android Studio XML设计界面代码报错解决方案/">
-        <p class="h4 index-header"></p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
-title: 关于Android Studio预设界面XML代码报错问题出现最近突然脑子一抽，买了本Kotlin的编程书来看，想尝试一下安卓编程，结果好不容易安装完，再仔细汉化一遍，AS就开始给我发抛
-寻求办法我就疯了一样开始寻找这个问题的解决方法，书查了，网也上了，找了3天终于找到这玩意解决方案
-问题总结总的来说也不是什么大事，也就是我可能下了一个不知道哪里来的山寨版AS,虽然还挺好用，Gradle依赖不完全，本地的依赖库就这么点，导致编译器在检阅代码的时候发现了奇奇gaygay的引用，说到头来还是谷歌退出中国的锅。啥时候能回中国来啊。。中国苦百度久矣，Google play还不能用，中国网民属实水深火热，科学上网都找不到地方来。
-附上Gradle代码&#123;1234567891011121314151617181920    repositories &#123;        maven&#123; url&apos;http://maven.aliyun.com/nexus/content/groups/public/&apos;&#125;        google(</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-11-21&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-              </div>
-            </div>
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -267,6 +272,11 @@ title: 关于Android Studio预设界面XML代码报错问题出现最近突然�
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
@@ -307,7 +317,7 @@ title: 关于Android Studio预设界面XML代码报错问题出现最近突然�
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "微风塘塘&nbsp;",
+        "&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
