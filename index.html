@@ -133,6 +133,35 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/03/03/开发文档（2020.3.3）/">
+        <p class="h4 index-header"></p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">
+开发文档（2020.3.3）.md在完成功能设计和开发之前，首先我想做一个能够正常运行的app，也就是没有功能的程序框架，于是我就想着先完成框架的开发，因为是从零开始。我就先使用了AS预设的界面模板然后对XML文件进行了一些可视化的修改，有点像VS的操作，所以做起来没什么难度，比较新奇的就是控件的依赖需要进行额外的设置，解决起来也不会很复杂，如果没有什么特别的要求就是用只能设置就好了（如图）有一说一，有够难看的，尤其是这个预设界面有一个丑到爆炸的抬头，于是我开始考虑从java代码进行修改。经过查阅资料，主要有两种办法。第一种是在创建的activity默认继承了AppCompatActivity的情况下，需要使用这样的代码对MainActivity.java进行修改，加在protected void onCreate的类内的第一行
+12getSupportActionBar().hide();//去掉标题栏注意这句一定要写在setContentView()方法的后面
+
+或者是创建的activity默认继承了Activity的情况，用这这一行代码，虽然不是同一个时间，但是是同一个撤硕儿位</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-03&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2020/03/02/开发文档（2020.3.1）/">
         <p class="h4 index-header"></p>
         
